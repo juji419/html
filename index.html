@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button id="try-another">Try Another</button>
+            <button id="run">Run</button>
+            <button id="exit">Exit</button>
+        </div>
+        <div class="editor-preview-container">
+            <div class="editor">
+                <textarea id="code" name="code"></textarea>
+            </div>
+            <iframe id="preview" class="preview"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

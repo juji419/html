@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: hsl(305, 86%, 51%);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #faa5de;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#run {
+    margin: 0 auto;
+}
+
+.editor-preview-container {
+    display: flex;
+    flex: 1;
+}
+
+.editor {
+    width: 50%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.CodeMirror {
+    height: 100%;
+    border: none;
+}
+
+.preview {
+    width: 50%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .editor-preview-container {
+        flex-direction: column;
+    }
+
+    .editor, .preview {
+        width: 100%;
+        height: 50%;
+        border: none; /* Remove border for mobile view */
+    }
+}
